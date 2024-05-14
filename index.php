@@ -1,0 +1,4 @@
+<?php
+header("Location: homes/index.html");
+exit;
+?>
