@@ -33,6 +33,7 @@
     <link href="../assets/css/theme.min.css" rel="stylesheet" />
     <link href="../assets/css/user.min.css" rel="stylesheet" />
 	<link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
 
@@ -97,14 +98,27 @@
       <!-- ============================================-->
 
       <div id="target-down"></div>
-
+	  
+	  
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="text-center pb-0" id="bigcartelAbout">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-7">
-              <h1 class="mb-3 fs-3 fs-sm-4 text-decoration-underline">About Me</h1>
+            <div class="rotating-text">
+				<p>I am a</p>
+				<p>
+				  <span class="word alizarin">programmer.</span>
+				  <span class="word wisteria">designer.</span>
+				  <span class="word peter-river">producer.</span>
+				  <span class="word emerald">videographer.</span>
+				  <span class="word sun-flower">musician.</span>
+				  <span class="word sun-flower">SOLUTION._=)</span>
+
+				</p>
+			  </div>
+			<div class="col-lg-7-bl">
+				
               <p>Graduated from Software Engineering, with knowledge in management, project development and maintenance, agile methodologies, development of web platforms, with high experience in music production/composition and multimedia design, I consider myself a proactive person and I can handle multiple tasks with efficiency. I want to continue learning and I am always willing to give my best.</p>
             </div>
           </div>
@@ -122,26 +136,31 @@
       <!-- ============================================-->
 
 
-	  <section class="text-center pb-0" id="bigcartelAbout">
+	  <section class="text-center pb-0" id="bigcartelAbout" style="background-color: black;">
         <div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-7">
-				  <h1 class="mb-3 fs-3 fs-sm-4 text-decoration-underline">3D Modeling</h1>
+				<div class="col-lg-7-wh">
+				  <h1 class="mb-4 fs-4 fs-sm-4 text-decoration-underline swiper-button-white" style="color: #ffffff;">3D Modeling</h1>
 				  <p>Here are some projects that I've developed in my freetime, I like to make experiments with everything so I learned how to use spline, a 3D modeling tool to design all you can imagine.</p>
 				</div>
 			  </div>
 			  <section style="height:  50rem;">
 				<script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.5/build/spline-viewer.js"></script>
 				<spline-viewer url="https://prod.spline.design/KpH8odCWLeMv-cvq/scene.splinecode"></spline-viewer>
+				<div class="col-lg-7-wh">
+				
 				<p>A gamer keyboard: simple, colorful, and minimal.</p>
-			
+				</div>
 			</section>
 
 			<section style="height:  60rem; margin-top: 15 rem;">
 				<script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.5/build/spline-viewer.js"></script>
 				<spline-viewer loading-anim-type="spinner-small-light" url="https://prod.spline.design/KhJaUJ2PuEfNDFsX/scene.splinecode"></spline-viewer>
-				<p>A forest minigame: You have to find a cross hidden in the forest, would you make it?</p>
-			
+				<div class="col-lg-7-wh">
+				
+					<p>A forest minigame: You have to find a cross hidden in the forest, would you make it?</p>
+
+				</div>
 			</section>
 
         </div><!-- end of .container-->
@@ -155,42 +174,51 @@
 	  
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="text-center" id="bigcartelPartners">
-        <div class="container">
-          <h3 class="mb-6">What do I know?</h3>
-          <div class="row align-items-center">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><img class="logo-grid" src="../assets/img/logo/Recurso 1.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><img class="logo-grid" src="../assets/img/logo/Recurso 2.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-sm-0"><img class="logo-grid" src="../assets/img/logo/Recurso 4.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-md-0"><img class="logo-grid" src="../assets/img/logo/Recurso 5.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-lg-0"><img class="logo-grid" src="../assets/img/logo/Recurso 6.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-lg-0"><img class="logo-grid" src="../assets/img/logo/Recurso 7.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 8.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 11.png" alt="" /></div>
+		<section class="text-center" id="bigcartelPartners" style="background-color: white;">
+			<canvas id="matrixEffect"></canvas>
+			<div class="container">
+				<h1 class="mb-6">What do I know?</h3>
+				<div class="row align-items-center">
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 1.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 2.png" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<!-- You can explore more animations from Animate.css library -->
+					<!-- Each image will now bounce in -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-sm-0"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 4.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-md-0"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 5.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-lg-0"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 6.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 mt-lg-0"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 7.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 8.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 11.png" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 9.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 15.png" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 13.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 14.png" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 10.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 12.png" alt="" /></div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 17.png" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 18.png" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 19.svg" alt="" /></div>
+					<!-- Add animate__bounceIn class to each image -->
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid animate__animated animate__bounceIn" src="../assets/img/logo/Recurso 16.png" alt="" /></div>
 
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 9.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 15.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 13.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 14.png" alt="" /></div>
-			
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 10.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 12.png" alt="" /></div>
-			<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 17.png" alt="" /></div>
-			<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 18.png" alt="" /></div>
-			<div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4"><img class="logo-grid" src="../assets/img/logo/Recurso 19.svg" alt="" /></div>
-
-			
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
+				</div>
+			</div><!-- end of .container-->
+		</section><!-- <section> close ============================-->
+		
       <!-- ============================================-->
 <!-- <section> begin ============================-->
 	<section class="mt-5 mt-lg-0 py-lg-7" id="page-portfolio">
         <div class="container">
           <div class="row mb-5 mb-lg-7">
-            <div class="col-lg-6">
+            <div class="col-lg-7-bl">
               <h1 class="text-decoration-underline d-inline fs-4 fs-md-5">Portfolio</h1>
-              <p class="mt-3">Here are some of the project I have worked on, everything is under my property.</p>
+              <p class="mt-3">Here are some of the project I have worked on, everything is under my property. :)</p>
             </div>
           </div>
           <ul class="nav font-sans-serif mb-2" data-filter-nav="data-filter-nav">
@@ -314,7 +342,8 @@
     <script src="../vendors/gsap/customEase.js"></script>
     <script src="../vendors/gsap/drawSVGPlugin.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122907869-1"></script>
-    <script>
+    <script src="animationtext.js"></script>
+	<script>
       window.dataLayer = window.dataLayer || [];
 
       function gtag() {
