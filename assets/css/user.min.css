@@ -8,13 +8,13 @@
     font-size: 20px; /* Change font size to desired size */
     font-family: Arial, Helvetica, sans-serif; /* Change font family to desired font */
 }
+@media only screen and (max-width: 767px) {
+    .text-center-ed {
+        margin-top: 35rem;
+		position: center;
+    }
+}
 
-canvas {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1; /* Ensure the canvas is behind all other elements */
-  }
 #bigcartelPartners {
 	position: relative;
     height: 100vh;
